@@ -13,6 +13,16 @@ You have the following monthly sales data
 
 ### Write a query to get running totals
 
+```
+ID  |  month |  sales | running total
+----+--------+--------+-------------
+ 1  |    Jan |   10   |     10
+ 2  |    Feb |   20   |     30
+ 3  |    Mar |   15   |     45
+...
+```
+
+
 1. Open postgres on the work stations by opening finder and typing "postgres"
 
 1. In your terminal, create your database: `CREATE DATABASE sales;`
