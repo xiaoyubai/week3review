@@ -3,11 +3,11 @@
 You have the following monthly sales data
 
   ```
-    month |  sales
-  --------+---------
-      Jan |   10
-      Feb |   20  
-      Mar |   15
+  ID  |  month |  sales
+  ----+--------+---------
+   1  |    Jan |   10
+   2  |    Feb |   20  
+   3  |    Mar |   15
   ...
   ```
 
