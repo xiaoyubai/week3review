@@ -45,3 +45,21 @@ insert into sales VALUES (1, 'Jan', 10);
 insert into sales VALUES (2, 'Feb', 20);
 insert into sales VALUES (3, 'Mar', 15);  
 ```
+
+```sql
+SELECT
+    s1.ID AS id,
+    s1.month AS month,
+    s1.sales AS sales,
+    SUM(s2.sales) AS running_total
+FROM sales1 AS s1
+JOIN sales1 AS s2
+ON s1.ID >= s2.ID
+GROUP BY s1.ID, s1.month, s1.sales
+ORDER BY s1.id;
+```
+
+```sql
+SELECT s1.*, s2.* FROM sales1 AS s1 JOIN sales1 AS s2 on s1.ID >= s2.ID;
+
+```
