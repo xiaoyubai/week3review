@@ -41,13 +41,15 @@ ID  |  month |  sales | running total
 4. To add items, you can use `INSERT INTO`.
 
 
-### Answer
 
 ```sql
 insert into sales VALUES (1, 'Jan', 10);
 insert into sales VALUES (2, 'Feb', 20);
 insert into sales VALUES (3, 'Mar', 15);  
 ```
+
+### Answer
+
 
 ```sql
 SELECT
