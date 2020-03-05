@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bunny World</string>
+    <string name="action_restart_game">Restart</string>
+    <string name="action_end_game">End Game</string>
+</resources>

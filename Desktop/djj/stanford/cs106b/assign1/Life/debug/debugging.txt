@@ -1,0 +1,31 @@
+Welcome to the CS 106B/X Game of Life!
+This program simulates the lifecycle of a bacterial colony.
+Cells (X) live and die by the following rules:
+* A cell with 1 or fewer neighbors dies.
+* Locations with 2 neighbors remain stable.
+* Locations with 3 neighbors will create life.
+* A cell with 4 or more neighbors dies.
+
+Grid input file name? simple.txt
+---------
+---------
+---XXX---
+---------
+---------
+
+***
+*** STANFORD C++ LIBRARY
+*** An ErrorException occurred during program execution:
+*** LifeGUI::fillCell illegal row/col
+*** Stack trace (line numbers are approximate):
+*** in Life  LifeGUI::fillCell(int, int)
+*** in Life  fillCellGUI(Grid const&)
+*** in Life  loadInputFileAndStartGame(Grid&)
+*** in Life  main()
+***
+libc++abi.dylib: terminate_handler unexpectedly returned
+08:33:13: The program has unexpectedly finished.
+
+This is a bug I encontered when trying to display grid in LifeGUI. I tried to test if I didn't
+resize the gui properly. The problem was actually I need to resize the gui after I initialize the LifeGUI.
+After I resize the LifeGUI, the error went away!
